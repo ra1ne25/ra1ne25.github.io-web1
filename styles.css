@@ -1,0 +1,139 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #9a84fa 0%, #a2e0fd 100%);
+    overflow: hidden;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: move 20s infinite alternate ease-in-out;
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+    background: #ffffff; /* яркий цвет для фигур */
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: #ffffff93; /* яркий цвет для фигур */
+    opacity: 0.5;
+}
+
+/* Переместим фигуры в более заметные положения на экране */
+.shape:nth-child(1) {
+    left: 10%;
+    top: 10%;
+}
+
+.square:nth-child(2) {
+    right: 10%;
+    top: 10%;
+}
+
+.circle:nth-child(3) {
+    left: 10%;
+    bottom: 10%;
+}
+
+.square:nth-child(4) {
+    right: 10%;
+    bottom: 10%;
+}
+
+/* Определяем ключевые кадры для анимации 'move' */
+@keyframes move {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0);
+    }
+    50% {
+        transform: translateY(100px) translateX(100px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) translateX(0) rotate(360deg);
+    }
+}
+  
+  header {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 3rem; /* увеличение для лучшей видимости */
+    font-weight: bold;
+    margin-bottom: 15px; /* уменьшение расстояния до подзаголовка для компактности */
+  }
+  
+  .welcome-message {
+    font-size: 1.25rem;
+    color: #495057;
+    margin-bottom: 30px; /* добавляем пространство для дыхания */
+  }
+  
+  .game-info {
+    padding: 10px 0; /* добавляем немного внутреннего отступа */
+    border-radius: 8px; /* закругляем углы */
+    margin-bottom: 20px; /* добавляем пространство после блока счета */
+  }
+
+  
+  #totalScore {
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: #28a745; /* изменим цвет кнопки на более оживленный */
+    border-color: #28a745;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* применяем тень для эффекта приподнятости */
+    font-size: 1.2rem;
+    padding: 10px 20px; /* увеличиваем внутренний отступ для большей видимости и удобства */
+    margin-top: 20px; /* добавляем немного пространства над кнопкой */
+    transition: background-color 0.3s ease; /* плавное изменение цвета при наведении и нажатии */
+    border-radius: 20px; /* более крупное закругление для современного внешнего вида */
+  }
+
+    
+  .btn-primary1 {
+    background-color: #a72828; /* изменим цвет кнопки на более оживленный */
+    border-color: #a72828;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* применяем тень для эффекта приподнятости */
+    font-size: 1.2rem;
+    padding: 10px 20px; /* увеличиваем внутренний отступ для большей видимости и удобства */
+    margin-top: 20px; /* добавляем немного пространства над кнопкой */
+    transition: background-color 0.3s ease; /* плавное изменение цвета при наведении и нажатии */
+    border-radius: 20px; /* более крупное закругление для современного внешнего вида */
+    color: #ffffff;
+  }
+  
+  .btn-primary1:hover,
+  .btn-primary1:focus {
+    background-color: #882121; /* темнее при наведении/фокусе для интерактивности */
+    border-color: #7e1e1e;
+    outline: none; /* убираем стандартный outline при фокусе для чистоты */
+  }
+  
+
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: #218838; /* темнее при наведении/фокусе для интерактивности */
+    border-color: #1e7e34;
+    outline: none; /* убираем стандартный outline при фокусе для чистоты */
+  }
+  
+  .blank {
+    font-weight: bold;
+    border-bottom: 3px solid #007bff; /* синий цвет подчеркивания для соответствия заголовку */
+    padding-bottom: 5px; /* небольшой отступ снизу для визуального пространства */
+  }
